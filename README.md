@@ -3,6 +3,13 @@ MCUME emulator modified to work with a 3.2-inch 8-bit parallel 320x240 LCD
 
 original code: github.com/Jean-MarcHarvengt/MCUME/
 
+New version 1.1:
+compatibility for D64, D81 Kernal only
+SID audio player
+compatibility for T64
+soft reset returns to the initial menu by long pressing key/joy and User
+ability to copy (favorite)
+
 Button functions:
 
 left/right/up/down/fire - control joystick, virtual keyboard and start menu.
@@ -11,13 +18,13 @@ user 1 - configurable button
 
 key/joy - joystick or virtual keyboard selection
 
-set - in emulation opens setting menu (Joystic port, audio volume, color palette, user function button), in initial menu delete the files in SD, confirm with fire, cancel with set
+set - in emulation opens setting menu (Joystic port, color palette, user function button), in initial menu delete the files in SD, confirm with fire, cancel with set
 
 plus/minus - volume control, used to control parameters in setting menu
 
 reset - reset pico
 
-SD reader integrated LCD display is used. Inside the SD, insert only .PRG files organized into multiple folders, maximum 64 folders and 64 files per folder. Initial menu displays SD contents.
+SD reader integrated LCD display is used. Inside the SD, insert .PRG .D64 .D81 .T64 .SID files organized into multiple folders, maximum 64 folders and 64 files per folder. Initial menu displays SD contents.
 
 ![IMG_4342](https://github.com/user-attachments/assets/048bebeb-d719-4f3f-8421-526b48eb2785)
 ![IMG_4350](https://github.com/user-attachments/assets/4a342a9d-7391-4c0e-8d39-aad7f20643e1)
